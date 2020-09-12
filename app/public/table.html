@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Favorite Books</title>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Penguin World</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="intro.html">My Favorite Books</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="page-title">
+      <h1>My Favorite Book List</h1>
+    </div>
+
+    <div class="page-mainimg">
+      <a target="_blank" href="https://resize.hswstatic.com/w_796/gif/penguins-1.jpg">
+      <img src="img/4.jpg" class="img-thumbnail"/>
+      </a>
+    </div>
+    <div class="page-src">
+      <p>
+        source: <a target="_blank" href="https://animals.howstuffworks.com/birds/penguins.htm">https://animals.howstuffworks.com/birds/penguins.htm</a>
+      </p>
+    </div>
+
+    <div class="container" id="maindivintro">
+      <table id="taskTable" class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author(s)</th>
+            <th>Year Published</th>
+            <th>Publisher</th>
+            <th>Page Count</th>
+            <th>MSRP</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Emperor's New Clothes</td>
+            <td>Emperor penguin</td>
+            <td>1835</td>
+            <td>KSB</td>
+            <td>154</td>
+            <td>$29.99</td>
+          </tr>
+          <tr>
+            <td>How to Fight Polor Bear</td>
+            <td>Adélie penguin</td>
+            <td>2003</td>
+            <td>SPEA</td>
+            <td>205</td>
+            <td>$34.99</td>
+          </tr>
+          <tr>
+            <td>Rainbow Six Siege Guide</td>
+            <td>LittlePenguin</td>
+            <td>2018</td>
+            <td>Ubisoft</td>
+            <td>376</td>
+            <td>$9.99</td>
+          </tr>
+          <tr>
+            <td>Human's Best Friend</td>
+            <td>Gentoo penguin</td>
+            <td>2015</td>
+            <td>Jacob SoM</td>
+            <td>107</td>
+            <td>$19.99</td>
+          </tr>
+          <tr>
+            <td>Really Need to Review HTML</td>
+            <td>Chinstrap penguin</td>
+            <td>2020</td>
+            <td>MSIS Student</td>
+            <td>95</td>
+            <td>Free</td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th scope="col" colspan="6">Adding more to my book list:</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <div class="container" id="listenter">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Title</label>
+            <input type="text" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Author(s)</label>
+            <input type="text" class="form-control" id="inputPassword4">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Year Published</label>
+            <input type="number" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Publisher</label>
+            <input type="text" class="form-control" id="inputPassword4">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Page Count</label>
+            <input type="number" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">MSRP in $</label>
+            <input type="number" class="form-control" id="inputPassword4">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Book</button>
+      </form>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/tablesort.min.js"></script>
+    <script>
+      new Tablesort(document.getElementById('taskTable'));
+    </script>
+  </body>
+</html>
