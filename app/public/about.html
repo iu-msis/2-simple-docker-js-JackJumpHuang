@@ -35,7 +35,7 @@
             <a class="nav-link" href="about.html">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="intro.html">My Favorite Books</a>
+            <a class="nav-link" href="table.html">My Favorite Books</a>
           </li>
         </ul>
       </div>
@@ -45,6 +45,7 @@
       <h1>Basic information about me.</h1>
     </div>
 
+<!--
     <div class="page-mainimg">
       <a target="_blank" href="https://i.redd.it/ovbdgplfebp01.png">
       <img src="img/5.jpg" class="img-thumbnail">
@@ -54,9 +55,16 @@
       <p>
         source: <a target="_blank" href="https://www.reddit.com/r/me_irl/comments/88rirq/meirl/">https://www.reddit.com/r/me_irl/comments/88rirq/meirl/</a>
       </p>
-    </div>
+    </div> -->
+
+
 
     <div class="container" id="maindivabout">
+
+      <a target="_blank" v-bind:href="userImgLarge">
+      <img v-bind:src="userImgThumb">
+      </a>
+
       <table class="table">
         <thead>
           <trscope>
@@ -104,7 +112,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-    <script src="js/profile2.app.js"></script>
+    <script src="js/randomuser.app.js"></script>
   </body>
 
 </html>
