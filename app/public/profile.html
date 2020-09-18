@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About Me</title>
+    <style>
+      #nav1
+      {
+        color: blue;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Penguin World</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" id="nav1">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="table.html">My Favorite Books</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="page-title">
+      <h1>Basic information about me.</h1>
+    </div>
+
+<!--
+    <div class="page-mainimg">
+      <a target="_blank" href="https://i.redd.it/ovbdgplfebp01.png">
+      <img src="img/5.jpg" class="img-thumbnail">
+      </a>
+    </div>
+    <div class="page-src">
+      <p>
+        source: <a target="_blank" href="https://www.reddit.com/r/me_irl/comments/88rirq/meirl/">https://www.reddit.com/r/me_irl/comments/88rirq/meirl/</a>
+      </p>
+    </div> -->
+
+
+
+    <div class="container" id="maindivabout">
+
+      <a target="_blank" v-bind:href="userImgLarge">
+      <img v-bind:src="userImgThumb">
+      </a>
+
+      <table class="table">
+        <thead>
+          <trscope>
+            <th scope="col" colspan="2" id="maintitle">Confidential Personal Information</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">My Name:</td>
+            <td>{{userName}}</td>
+          </tr>
+          <tr>
+            <td scope="row">My Address:</td>
+            <td>{{userAddress}}</td>
+          </tr>
+          <tr>
+            <td scope="row">My Birthday:</td>
+            <td>{{userBday}}</td>
+          </tr>
+          <tr>
+            <td scope="row">My Age:</td>
+            <td>{{userAge}}</td>
+          </tr>
+          <tr>
+            <td scope="row">My Email Address:</td>
+            <td>
+              <a href="mailto:littlepenguin@penguinworld.com">{{userEmail}}</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  <!--  <div id='userProfile'>
+        <h4>Name - {{userName}}</h4>
+        <h4>Address - {{userAddress}}</h4>
+        <h4>Birthday - {{userBday}}</h4>
+        <h4>Age - {{userAge}}</h4>
+        <h4>Email - {{userEmail}}</h4>
+        <h4>Phone - {{userPhone}}</h4>
+    </div> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="js/randomuser.app.js"></script>
+  </body>
+
+</html>
