@@ -13,7 +13,6 @@ var app = new Vue({
     created() {
         this.fetchUser();
     },
-
     methods:{
         fetchUser: function() {
           fetch('https://randomuser.me/api/')
@@ -38,7 +37,8 @@ var app = new Vue({
               console.log(userData);
               this.userName = userData.name.first + " " + userData.name.last;
               this.userAddress = userData.location.street.number + " " + userData.location.street.name + ", " + userData.location.city + ", " + userData.location.state + ", " + userData.location.country + ", " + userData.location.postcode;
-              this.userBday = userData.dob.date;
+              var trimBday = userData.dob.date.split('T');
+              this.userBday = trimBday[0];
               this.userAge = userData.dob.age;
               this.userEmail = userData.email;
               this.userImgLarge = userData.picture.large;

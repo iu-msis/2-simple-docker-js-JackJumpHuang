@@ -45,6 +45,40 @@
       <h1>Basic information about me.</h1>
     </div>
 
+
+    <div class="container" id="maindivabout">
+      <form v-on:submit.prevent="fetchUser()">
+        <p id='center'>
+          <a v-bind:href='userImgLarge'>
+            <img v-bind:src='userImgThumb' height="100pc">
+          </a>
+        </p>
+        <h4 style='text-glign:center'>My Name: {{userName}}</h4>
+        <h4 style='text-glign:center'>My Address: {{userAddress}}</h4>
+        <h4 style='text-glign:center'>My Birthday: {{userBday}}</h4>
+        <h4 style='text-glign:center'>My Age: {{userAge}}</h4>
+        <h4 style='text-glign:center'>My Email Address: <a href="mailto:littlepenguin@penguinworld.com">{{userEmail}}</a></h4>
+        <p id='center'><button>Get New User</button></p>
+      </form>
+    </div>
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="js/randomuser.app.js"></script>
+  </body>
+
+</html>
+
+
+<!-- below are historical drafts-->
+
 <!--
     <div class="page-mainimg">
       <a target="_blank" href="https://i.redd.it/ovbdgplfebp01.png">
@@ -59,13 +93,13 @@
 
 
 
-    <div class="container" id="maindivabout">
+      <!--<div class="container" id="maindivabout">
 
       <a target="_blank" v-bind:href="userImgLarge">
       <img v-bind:src="userImgThumb">
       </a>
 
-      <table class="table">
+      <table class="table" v-on:sumbit.prevent="onSubmit">
         <thead>
           <trscope>
             <th scope="col" colspan="2" id="maintitle">Confidential Personal Information</th>
@@ -94,25 +128,15 @@
             </td>
           </tr>
         </tbody>
+        <button>Get New User</button>
       </table>
-    </div>
+    </div>-->>
 
-  <!--  <div id='userProfile'>
-        <h4>Name - {{userName}}</h4>
-        <h4>Address - {{userAddress}}</h4>
-        <h4>Birthday - {{userBday}}</h4>
-        <h4>Age - {{userAge}}</h4>
-        <h4>Email - {{userEmail}}</h4>
-        <h4>Phone - {{userPhone}}</h4>
-    </div> -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-    <script src="js/randomuser.app.js"></script>
-  </body>
-
-</html>
+<!--  <div id='userProfile'>
+    <h4>Name - {{userName}}</h4>
+    <h4>Address - {{userAddress}}</h4>
+    <h4>Birthday - {{userBday}}</h4>
+    <h4>Age - {{userAge}}</h4>
+    <h4>Email - {{userEmail}}</h4>
+    <h4>Phone - {{userPhone}}</h4>
+</div> -->
