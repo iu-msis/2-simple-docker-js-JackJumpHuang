@@ -1,7 +1,0 @@
-.*
-docker-compose.yml
-*.md
-
-// the first line indicates to omit all files that started with a "."
-// the second line indicates the file we want to omit
-// the third line indicates to omit any markdown files
