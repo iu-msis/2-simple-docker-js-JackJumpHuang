@@ -20,7 +20,7 @@ $db = DbConnection::getConnection();
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
   'INSERT INTO Comments (id, commentText)
-  VALUES (?, ?, ?, ?, ?)'
+  VALUES (?, ?)'
 );
 
 $stmt->execute([
