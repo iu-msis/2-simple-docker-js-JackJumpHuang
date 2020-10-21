@@ -66,10 +66,10 @@
         </table>
         <form id="newCommentForm" v-on:submit.prevent ="createComment()">
           <div class="comments">
-              <label for="commentText">Submit Comment</label>
+              <label for="commentText">Add Comment</label>
               <input id="commentText" type="textarea" v-model="newComment.commentText" class="form-control" placeholder="Write your comment here">
           </div><br/>
-          <input type="submit" value="Create New Comment" class="button" id="submitNewComment">
+          <input id="submitNewComment" type="submit" value="Submit Comment" class="button">
         </form>
     </div>
 
