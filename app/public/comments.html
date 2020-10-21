@@ -49,37 +49,29 @@
     </div>
 
 
-    <div class="container-fluid">
-    <div class="row" id="commenttext">
-      <div class="comments" v-for="Comment in Comments">
-      <span class="id">ID: {{Comment.id}}</span><br>
-      <span class="commenttxt">Comment Text: {{Comment.commentText}}</span>
-      </div>
+    <div id="commenttext">
+        <table id="commentTable" class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">CommentText</th>
+            </tr>
+          </thead>
+          <tbody id="commentTableBody">
+            <tr v-for="comment in comments" id="comments">
+              <td>{{comment.id}}</td>
+              <td>{{comment.commentText}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <form id="newCommentForm" v-on:submit.prevent ="createComment()">
+          <div class="comments">
+              <label for="commentText">Submit Comment</label>
+              <input id="commentText" type="textarea" v-model="newComment.commentText" class="form-control" placeholder="Write your comment here">
+          </div><br/>
+          <input type="submit" value="Create New Comment" class="button" id="submitNewComment">
+        </form>
     </div>
-    </div>
-
-    <div class="container" id="commenttext">
-      <form id="commenttext" v-on:submit.prevent="fetchUser()">
-        <p id='center'><button>Refresh Comments</button></p>
-      </form>
-    </div>
-
-    <!--<div class="container" id="commenttext">
-      <table class="table" id="commenttext">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <td>Comment</td>
-        </tr>
-      </thead>
-      <tbody id="commenttext">
-        <tr v-for="Comment in Comments">
-          <th>{{Comment.id}}</th>
-          <td>{{Comment.commentText}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div> -->
 
 
 
